@@ -1,14 +1,14 @@
 const employees = [
-    { name: "Alice", hourlyRate: 25, hoursWorked: 40 },
-    { name: "Bob", hourlyRate: 30, hoursWorked: 35 },
-    { name: "Charlie", hourlyRate: 20, hoursWorked: 45 }
+    { name: "Timothy", hourlyRate: 25, hoursWorked: 40 },
+    { name: "Cooper", hourlyRate: 30, hoursWorked: 35 },
+    { name: "Charles", hourlyRate: 20, hoursWorked: 45 }
 ];
 
 function calculateBasePay(rate, hours) {
-    if (hours > 40) {
-        return rate * 40;
-    } else {
+    if (hours <= 40) {
         return rate * hours;
+    } else {
+        return rate * 40;
     } 
 }
 
